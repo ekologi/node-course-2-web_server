@@ -45,6 +45,12 @@ app.get('/About',(req,res) => {
     });
 })
 
+app.get('/projects',(req,res) => {
+    res.render('projects.hbs',{
+        pageTitle: 'Our Projects',
+    });
+})
+
 app.get('/bad',(req,res)=>{
     res.send({
         errorMessage: 'Tidak bisa meng-handle' 
